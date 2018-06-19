@@ -1,10 +1,4 @@
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
-  }
 
 class Merge_Two_Binary_Trees_617 {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
