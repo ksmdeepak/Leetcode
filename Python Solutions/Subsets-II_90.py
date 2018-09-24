@@ -5,10 +5,11 @@ class Solution:
         result.append(path)
         i = index
         while i<len(nums):
-            self.dfs(nums,i+1,path+[nums[i]],result)
-            i+=1
-            while i<len(nums) and nums[i]==nums[i-1]:
+            if i>index and nums[i]==nums[i-1]:
                 i+=1
+                continue
+            self.dfs(nums,i+1,path+[nums[i]],result)
+            i+=1      
             
     def subsetsWithDup(self, nums):
         """
