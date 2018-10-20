@@ -1,4 +1,4 @@
-#
+# https://leetcode.com/problems/partition-to-k-equal-sum-subsets/description/
 
 class Solution(object):
     def search(self,target,nums,subsets):
